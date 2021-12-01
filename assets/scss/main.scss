@@ -1,0 +1,81 @@
+// For tests
+.test{
+    width: 100vw;
+    height: 5030vh;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+// Widget
+.weather-widget{
+    z-index: 99;
+    display: block;
+    position: fixed;
+    background: hsla(0, 0%, 100%, 0.8);
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.5s;
+    user-select: none;
+    -moz-user-select: none;
+    color: inherit;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr .5fr;
+    width: 200px;
+    padding: 0.65rem;
+
+    &:hover{
+        opacity: 0.6;
+    }
+    
+    &__icon{
+        align-self: center;
+        justify-self: stretch;
+        width: 80%;
+        height: 100%;
+    }
+
+    &__info{
+        align-self: center;
+    }
+
+    &__city{
+        display: inline-block;
+        font-size: 0.7em;
+    }
+
+    &__weather{
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 1em;
+    }
+
+    &__temp{
+        justify-self: right;
+        font-size: 0.8em;
+
+        &::after{
+            content: '°C';
+        }
+    }
+}
+
+.weather-widget.bottom{
+    bottom: 10vh;
+}
+.weather-widget.top{
+    top: 10vh;
+}
+.weather-widget.right{
+    right:5vw;
+}
+.weather-widget.left{
+    left: 5vw;
+}
