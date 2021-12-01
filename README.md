@@ -22,6 +22,7 @@ And import this
 <link rel="stylesheet" href="assets/css/main.css">
 <script src="assets/css/main.js"></script>
 ```
+Remember to add your API Key into JavaScript file.
 
 ## Development
 Just clone repo and install _devDependencies_ and if you want to modify stylesheets just run ```npm run sass``` to enable compiling scss files to css
