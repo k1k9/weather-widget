@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
 // For tests
 .test{
     width: 100vw;
@@ -6,16 +8,14 @@
     box-sizing: border-box;
     overflow: hidden;
     background-color: black;
-    font-family: 'Quicksand', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
 // Widget
 .weather-widget{
     z-index: 99;
     display: block;
     position: fixed;
+    font-family: 'Quicksand', sans-serif;
     background: hsla(0, 0%, 100%, 0.8);
     border-radius: 5px;
     box-sizing: border-box;
